@@ -5,6 +5,7 @@
 
 ## Link Aplikasi
 https://assignmentpbp.herokuapp.com/mywatchlist/
+https://assignmentpbp.herokuapp.com/mywatchlist/html/
 
 ## Jawaban Pertanyaan ✅
 
