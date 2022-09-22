@@ -5,9 +5,6 @@
 
 ## Link Aplikasi
 https://assignmentpbp.herokuapp.com/mywatchlist/
-https://assignmentpbp.herokuapp.com/mywatchlist/html/
-https://assignmentpbp.herokuapp.com/mywatchlist/xml/
-https://assignmentpbp.herokuapp.com/mywatchlist/json/
 
 ## Jawaban Pertanyaan ✅
 
@@ -23,23 +20,25 @@ Perbedaan lain antara HTML dan XML dapat dilihat dari segi tags yang tersedia pa
 ### 2. Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
 
 ### 3. Implementasi Kode
-1. `cd` ke direktori tempat `TUGAS-2-PBP` berada
+1. `cd` ke direktori tempat `dummy-tugas-pbp` berada
 2. Menyalakan virtual environment dengan perintah `python -m venv env`, lalu `env\Scripts\activate.bat` dan `pip install -r requirements.txt`
 2. Buat aplikasi bernama `mywatchlist` dengan perintah `python manage.py startapp mywatchlist`
 3. Melakukan konfigurasi pada `settings.py` di folder `project_django` dengan menambahkan aplikasi `mywatchlist` ke dalam variabel `INSTALLED_APPS`. Hal tersebut dilakukan untuk mendaftarkan aplikasi `mywatchlist` ke dalam proyek Django
 
 5. Menambahkan *code snippet* di bawah ke dalam file `models.py` pada folder `mywatchlist`
 
-6. Lakukan perintah `python manage.py makemigrations` untuk mempersiapkan migrasi skema model ke dalam database Django lokal.
+6. Melakukan perintah `python manage.py makemigrations` untuk mempersiapkan migrasi skema model ke dalam database Django lokal.
 
-7. Jalankan perintah `python manage.py migrate` untuk menerapkan skema model yang telah dibuat ke dalam database Django lokal.
+7. Melakukan perintah `python manage.py migrate` untuk menerapkan skema model yang telah dibuat ke dalam database Django lokal.
 
-8. Membuat folder `fixtures` di dalam folder aplikasi `mywatchlist`, lalu membuat berkas `initial_watchlist_data.json` yang berisi:
-```
-
-```
+8. Membuat folder `fixtures` di dalam folder aplikasi `mywatchlist`, lalu membuat berkas `initial_watchlist_data.json` yang berisi data dari objek
 9. Lalu, untuk memasukkan data tersebut ke dalam database Django lokal, menggunakan perintah `python manage.py loaddata initial_watchlist_data.json`
 
 3. Menambahkan file `urls.py` pada folder `mywatchlist` untuk melakukan *routing* terhadap fungsi `views` agar halaman HTML dapat dilihat pada browser. Setelah itu, lakukan konfigurasi dengan menambahkan kode:
 
 4. Melakukan konfigurasi pada `urls.py` yang ada di folder `project_django` dan folder `mywatchlist`
+
+Langkah terakhir adalah men-*deploy* aplikasi ke Heroku dengan menambahkan `HEROKU_API_KEY` dan `HEROKU_APP_NAME` pada Github `Action -> Secrets`
+
+### Screenshot Postman
+![Postman1](Langkah terakhir adalah men-*deploy* aplikasi ke Heroku dengan menambahkan `HEROKU_API_KEY` dan `HEROKU_APP_NAME` pada Github `Action -> Secrets`)
