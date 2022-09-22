@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block meta %}
+  {% endblock meta %}
+</head>
+
+<body>
+    {% block content %}
+
+        <h1>PBP Assignment 3</h1>
+
+        <h2>Welcome to Mya's watchlist!</h2>
+
+        <h5>Name: </h5>
+        <p>{{name}}</p>
+
+        <h5>Student ID: </h5>
+        <p>{{id}}</p>
+
+        <p>{{message}}</p>
+
+        <table>
+        <tr>
+        <th>Title</th>
+        <th>Release Date</th>
+        <th>Watch Status</th>
+        <th>Rating</th>
+        <th>Review</th>
+        </tr>
+        {% for item in watchlist_item %}
+        <tr>
+            <th>{{item.title}}</th>
+            <th>{{item.release_date}}</th>
+            <th>{{item.watched}}</th>
+            <th>{{item.rating}}</th>
+            <th>{{item.review}}</th>
+        </tr>
+        {% endfor %}
+        </table>
+
+    {% endblock content %}
+</body>
+</html>>
