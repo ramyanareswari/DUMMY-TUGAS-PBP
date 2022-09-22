@@ -41,4 +41,6 @@ Perbedaan lain antara HTML dan XML dapat dilihat dari segi tags yang tersedia pa
 Langkah terakhir adalah men-*deploy* aplikasi ke Heroku dengan menambahkan `HEROKU_API_KEY` dan `HEROKU_APP_NAME` pada Github `Action -> Secrets`
 
 ### Screenshot Postman
-![Postman1](Langkah terakhir adalah men-*deploy* aplikasi ke Heroku dengan menambahkan `HEROKU_API_KEY` dan `HEROKU_APP_NAME` pada Github `Action -> Secrets`)
+![Postman1](https://github.com/ramyanareswari/dummy-tugas-pbp/blob/main/mywatchlist/screenshot/postman1.png)
+![Postman2](https://github.com/ramyanareswari/dummy-tugas-pbp/blob/main/mywatchlist/screenshot/postman2.png)
+![Postman3](https://github.com/ramyanareswari/dummy-tugas-pbp/blob/main/mywatchlist/screenshot/postman3.png)
